@@ -20,7 +20,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     TextView loginRedirectText;
 
-    EditText signupEmail, signupPassword , signupConfirm ;
+    EditText signupEmail, signupPassword , signupConfirm , signupName , signupSurname , signupIdNumber, signupAddress ;
     DatabaseHelper databaseHelper;
 
     @Override
@@ -28,10 +28,15 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-
         signupEmail = findViewById(R.id.signup_email);
         signupPassword = findViewById(R.id.signup_password);
         signupConfirm = findViewById(R.id.signup_confirm);
+        signupName = findViewById(R.id.signup_name);
+        signupSurname = findViewById(R.id.signup_surname);
+        signupIdNumber = findViewById(R.id.signup_id_number);
+        signupAddress = findViewById(R.id.signup_address);
+
+
         loginRedirectText = findViewById(R.id.loginRedirectText);
         signupButton = findViewById(R.id.signup_button);
 
@@ -43,15 +48,19 @@ public class RegisterActivity extends AppCompatActivity {
                 String email = signupEmail.getText().toString();
                 String password = signupPassword.getText().toString();
                 String confirmPassword = signupConfirm.getText().toString();
+                String firstname = signupName.getText().toString();
+                String surname = signupSurname.getText().toString();
+                String idNumber = signupIdNumber.getText().toString();
+                String address = signupAddress.getText().toString();
 
-                if(email.equals("")||password.equals("")||confirmPassword.equals(""))
+                if(address.equals("")||firstname.equals("")||surname.equals("")||idNumber.equals("") || email.equals("")||password.equals("")||confirmPassword.equals(""))
                     Toast.makeText(RegisterActivity.this, "All fields are mandatory", Toast.LENGTH_SHORT).show();
                 else{
                     if(password.equals(confirmPassword)){
                         Boolean checkUserEmail = databaseHelper.checkEmail(email);
 
                         if(checkUserEmail == false){
-                            Boolean insert = databaseHelper.insertData(email, password);
+                            Boolean insert = databaseHelper.insertData(email, password, firstname, surname ,  idNumber , address );
 
                             if(insert == true){
                                 Toast.makeText(RegisterActivity.this, "Signup Successfully!", Toast.LENGTH_SHORT).show();

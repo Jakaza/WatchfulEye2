@@ -9,15 +9,15 @@ import androidx.annotation.Nullable;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    public static final String databaseName = "SignLog.db";
+    public static final String databaseName = "WatchfulEye.db";
 
     public DatabaseHelper(@Nullable Context context) {
-        super(context, "SignLog.db", null, 1);
+        super(context, "WatchfulEye.db", null, 1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase MyDatabase) {
-        MyDatabase.execSQL("create Table users(email TEXT primary key, password TEXT)");
+        MyDatabase.execSQL("create Table users(email TEXT primary key, idNumber TEXT, firstName TEXT , LastName TEXT,address TEXT, password TEXT)");
     }
 
     @Override
@@ -25,11 +25,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         MyDB.execSQL("drop Table if exists users");
     }
 
-    public Boolean insertData(String email, String password){
+    public Boolean insertData(String email, String password, String firstname, String surname, String idNumber, String address){
         SQLiteDatabase MyDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put("email", email);
         contentValues.put("password", password);
+        contentValues.put("firstName", firstname);
+        contentValues.put("LastName", surname);
+        contentValues.put("idNumber", idNumber);
+        contentValues.put("address", address);
         long result = MyDatabase.insert("users", null, contentValues);
 
         if (result == -1) {
