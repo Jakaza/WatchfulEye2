@@ -22,7 +22,7 @@
     <!-- Register button -->
     <Button
         android:id="@+id/signup"
-        android:layout_width="360dp"
+        android:layout_width="300dp"
         android:layout_height="70dp"
         android:layout_marginTop="30dp"
         android:text="Register"
@@ -33,7 +33,7 @@
     <!-- Login button -->
     <Button
         android:id="@+id/signin"
-        android:layout_width="360dp"
+        android:layout_width="300dp"
         android:layout_height="70dp"
         android:layout_marginTop="30dp"
         android:text="Login"

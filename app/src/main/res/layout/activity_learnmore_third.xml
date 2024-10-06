@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/learn2"
+    android:background="@drawable/learn3"
     android:padding="10dp"
     tools:context=".LearnmoreThird">
 
@@ -31,7 +31,7 @@
         android:padding="8dp"
         android:text="Go To Home Page"
         android:textStyle="bold"
-        android:textColor="@color/lavender"
+        android:textColor="@color/black"
         android:textSize="18sp" />
 
 </LinearLayout>

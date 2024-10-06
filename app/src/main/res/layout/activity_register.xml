@@ -30,58 +30,63 @@
                 android:contentDescription="Profile" />
 
             <EditText
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="60dp"
                 android:id="@+id/signup_name"
                 android:background="@drawable/lavender_border"
                 android:layout_marginTop="30dp"
                 android:padding="8dp"
                 android:hint="Firstname"
-                android:drawablePadding="8dp"/>
+                android:drawablePadding="8dp"
+                android:layout_gravity="center"/>
 
             <EditText
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="60dp"
                 android:id="@+id/signup_surname"
                 android:background="@drawable/lavender_border"
                 android:layout_marginTop="30dp"
                 android:padding="8dp"
                 android:hint="Surname"
-                android:drawablePadding="8dp"/>
+                android:drawablePadding="8dp"
+                android:layout_gravity="center"/>
 
             <EditText
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="60dp"
                 android:id="@+id/signup_id_number"
                 android:background="@drawable/lavender_border"
                 android:layout_marginTop="30dp"
                 android:padding="8dp"
                 android:hint="ID Number"
-                android:drawablePadding="8dp"/>
+                android:drawablePadding="8dp"
+                android:layout_gravity="center"/>
 
             <EditText
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="60dp"
                 android:id="@+id/signup_address"
                 android:background="@drawable/lavender_border"
                 android:layout_marginTop="30dp"
                 android:padding="8dp"
                 android:hint="Home Address"
-                android:drawablePadding="8dp"/>
+                android:drawablePadding="8dp"
+                android:layout_gravity="center"/>
 
 
             <EditText
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="60dp"
                 android:id="@+id/signup_email"
                 android:background="@drawable/lavender_border"
                 android:layout_marginTop="30dp"
                 android:padding="8dp"
                 android:hint="Email"
-                android:drawablePadding="8dp"/>
+                android:drawablePadding="8dp"
+                android:layout_gravity="center"/>
 
             <EditText
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="60dp"
                 android:id="@+id/signup_password"
                 android:background="@drawable/lavender_border"
@@ -89,10 +94,11 @@
                 android:padding="8dp"
                 android:hint="Password"
                 android:inputType="textPassword"
-                android:drawablePadding="8dp"/>
+                android:drawablePadding="8dp"
+                android:layout_gravity="center"/>
 
             <EditText
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="60dp"
                 android:id="@+id/signup_confirm"
                 android:background="@drawable/lavender_border"
@@ -100,16 +106,18 @@
                 android:padding="8dp"
                 android:hint="Confirm Password"
                 android:inputType="textPassword"
-                android:drawablePadding="8dp"/>
+                android:drawablePadding="8dp"
+                android:layout_gravity="center"/>
 
             <Button
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="70dp"
                 android:text="Sign Up"
                 android:id="@+id/signup_button"
                 android:textSize="18sp"
                 android:layout_marginTop="30dp"
-                app:cornerRadius = "30dp"/>
+                app:cornerRadius = "30dp"
+                android:layout_gravity="center"/>
 
 
             <TextView
@@ -121,7 +129,9 @@
                 android:padding="8dp"
                 android:textSize="18sp"
                 android:layout_marginTop="8dp"
-                android:textColor="@color/lavender"/>
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
 
         </LinearLayout>
     </LinearLayout>

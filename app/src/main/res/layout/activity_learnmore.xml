@@ -24,7 +24,7 @@
     <!-- Login button -->
     <Button
         android:id="@+id/next_page"
-        android:layout_width="360dp"
+        android:layout_width="300dp"
         android:layout_height="70dp"
         android:layout_marginTop="30dp"
         android:text="Next Page"
@@ -40,7 +40,7 @@
         android:layout_marginTop="14dp"
         android:padding="8dp"
         android:text="Go To Home Page"
-        android:textColor="@color/lavender"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="18sp" />
 
