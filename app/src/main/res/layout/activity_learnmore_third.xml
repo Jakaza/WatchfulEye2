@@ -6,9 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/learn1"
+    android:background="@drawable/learn2"
     android:padding="10dp"
-    tools:context=".Learnmore">
+    tools:context=".LearnmoreThird">
 
     <!-- Empty space to push buttons down -->
     <LinearLayout
@@ -21,16 +21,6 @@
 
 
 
-    <!-- Login button -->
-    <Button
-        android:id="@+id/next_page"
-        android:layout_width="360dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="30dp"
-        android:text="Next Page"
-        android:textSize="18sp"
-        app:cornerRadius="30dp"
-        android:layout_gravity="center" />
 
     <TextView
         android:id="@+id/learnRedirectText"
@@ -40,8 +30,8 @@
         android:layout_marginTop="14dp"
         android:padding="8dp"
         android:text="Go To Home Page"
-        android:textColor="@color/lavender"
         android:textStyle="bold"
+        android:textColor="@color/lavender"
         android:textSize="18sp" />
 
 </LinearLayout>

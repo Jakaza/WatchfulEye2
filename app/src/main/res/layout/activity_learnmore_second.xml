@@ -6,9 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/learn1"
+    android:background="@drawable/learn2"
     android:padding="10dp"
-    tools:context=".Learnmore">
+    tools:context=".LearnmoreSecond">
 
     <!-- Empty space to push buttons down -->
     <LinearLayout

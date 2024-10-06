@@ -19,12 +19,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
-
         // Initialize buttons with their respective IDs
         signup = findViewById(R.id.signup);
         signin = findViewById(R.id.signin);
+        learnBtn = findViewById(R.id.learnRedirectText);
 
         // Set click listener for the Login button
         signup.setOnClickListener(new View.OnClickListener() {
